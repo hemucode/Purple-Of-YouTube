@@ -1,0 +1,17 @@
+{
+   "app_description": {
+      "message": "Shades of Purple YouTube theme that's easy on the eyes."
+   },
+   "app_name": {
+      "message": "Purple Of YouTube™"
+   },
+   "donate": {
+      "message": "donation"
+   },
+   "full_description": {
+      "message": "Purple Of YouTube™ is a content filtering and ad blocking browser extension which blocks all ads on Youtube™.It allows users to prevent page elements, such as advertisements, from being displayed. Banner, Ad-Clips or even preroll ads you usually see before the actual video on Youtube are blocked by this extension."
+   },
+   "rate": {
+      "message": "Please help and rate us!"
+   }
+}
