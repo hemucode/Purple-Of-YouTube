@@ -1,0 +1,10 @@
+{ "app_name": {
+        "message": "Purple Of YouTube™"
+    },
+    "app_description": {
+        "message": "Anpassa din YouTube -bakgrund med anpassade färger och teman för en snygg och unik upplevelse."
+    },
+    "app_short_name": {
+        "message": "purpur"
+    }
+}

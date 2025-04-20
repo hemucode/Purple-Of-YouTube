@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Popup</title>
+        <link rel="stylesheet" type="text/css" href='popup.css'>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo" data-title="Logo">
+                <img src="../icons/32.png">
+                <span class="name" data-title="App Name">Purple Of YouTube</span>  
+                <span class="tm">TM</span>
+            </div>
+            <a href="#" target="_blank" class="rate" data-title="rate">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="#" target="_blank" class="support" data-title="Support">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"/><g><path fill="#fff" d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4 8c0-2.21-1.79-4-4-4s-4 1.79-4 4h2c0-1.103.897-2 2-2s2 .897 2 2-.897 2-2 2c-.552 0-1 .448-1 1v2h2v-1.14c1.722-.447 3-1.998 3-3.86zm-3 6h-2v2h2v-2z"/></g></svg>
+            </a>
+        </header>
+
+        <div class="control">
+            <div class="title">
+                <button id="set_color" class="set_panel active">
+                    <svg fill="#fff" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 .5C3.58.5 0 3.86 0 8s3.58 7.5 8 7.5c4.69 0 1.04-2.83 2.79-4.55.76-.75 1.63-.87 2.44-.87.37 0 .73.03 1.06.03.99 0 1.72-.23 1.72-2.1C16 3.86 12.42.5 8 .5zm6.65 8.32c-.05.01-.16.02-.37.02-.14 0-.29 0-.45-.01-.19 0-.39-.01-.61-.01-.89 0-2.19.13-3.32 1.23-1.17 1.16-.9 2.6-.74 3.47.03.18.08.44.09.6-.16.05-.52.13-1.26.13-3.72 0-6.75-2.8-6.75-6.25S4.28 1.75 8 1.75s6.75 2.8 6.75 6.25c0 .5-.06.74-.1.82z"/><path d="M5.9 9.47c-1.03 0-1.86.8-1.86 1.79s.84 1.79 1.86 1.79 1.86-.8 1.86-1.79-.84-1.79-1.86-1.79zm0 2.35c-.35 0-.64-.25-.64-.56s.29-.56.64-.56.64.25.64.56-.29.56-.64.56zm-.2-4.59c0-.99-.84-1.79-1.86-1.79s-1.86.8-1.86 1.79.84 1.79 1.86 1.79 1.86-.8 1.86-1.79zm-1.86.56c-.35 0-.64-.25-.64-.56s.29-.56.64-.56.64.25.64.56-.29.56-.64.56zM7.37 2.5c-1.03 0-1.86.8-1.86 1.79s.84 1.79 1.86 1.79 1.86-.8 1.86-1.79S8.39 2.5 7.37 2.5zm0 2.35c-.35 0-.64-.25-.64-.56s.29-.56.64-.56.64.25.64.56-.29.56-.64.56zm2.47 1.31c0 .99.84 1.79 1.86 1.79s1.86-.8 1.86-1.79-.84-1.79-1.86-1.79-1.86.8-1.86 1.79zm2.5 0c0 .31-.29.56-.64.56s-.64-.25-.64-.56.29-.56.64-.56.64.25.64.56z"/></svg>
+                </button>
+                <button id="set_font" class="set_panel">
+                    <svg fill="#fff" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4.51 2.6.25 13.67h1.34l1.49-3.86h4l1.52 3.86h1.34L5.68 2.6a.63.63 0 0 0-1.17 0zm-.95 6 1.54-4 1.53 4zm9.35-2.54a2.8 2.8 0 0 0-3 2.08l1.21.31a1.6 1.6 0 0 1 1.78-1.14c.77 0 1.59.26 1.59 1v.75c-.27 0-.63.09-.94.13a9.12 9.12 0 0 0-2.5.52 2.06 2.06 0 0 0-1.41 2.23 1.94 1.94 0 0 0 .88 1.44 3 3 0 0 0 1.62.43 4.39 4.39 0 0 0 1.36-.22 2.92 2.92 0 0 0 1-.52v.61h1.25V8.3c0-1.3-1.14-2.24-2.84-2.24zm.22 6.33a2.4 2.4 0 0 1-1.91-.07.64.64 0 0 1-.32-.52c-.1-.89.82-1.16 2.8-1.38l.76-.1c-.19 1.68-.94 1.94-1.33 2.07z"/></svg>
+                </button>
+                <button id="set_seting" class="set_panel">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.1 9.2214C18.29 9.2214 17.55 7.9414 18.45 6.3714C18.97 5.4614 18.66 4.3014 17.75 3.7814L16.02 2.7914C15.23 2.3214 14.21 2.6014 13.74 3.3914L13.63 3.5814C12.73 5.1514 11.25 5.1514 10.34 3.5814L10.23 3.3914C9.78 2.6014 8.76 2.3214 7.97 2.7914L6.24 3.7814C5.33 4.3014 5.02 5.4714 5.54 6.3814C6.45 7.9414 5.71 9.2214 3.9 9.2214C2.86 9.2214 2 10.0714 2 11.1214V12.8814C2 13.9214 2.85 14.7814 3.9 14.7814C5.71 14.7814 6.45 16.0614 5.54 17.6314C5.02 18.5414 5.33 19.7014 6.24 20.2214L7.97 21.2114C8.76 21.6814 9.78 21.4014 10.25 20.6114L10.36 20.4214C11.26 18.8514 12.74 18.8514 13.65 20.4214L13.76 20.6114C14.23 21.4014 15.25 21.6814 16.04 21.2114L17.77 20.2214C18.68 19.7014 18.99 18.5314 18.47 17.6314C17.56 16.0614 18.3 14.7814 20.11 14.7814C21.15 14.7814 22.01 13.9314 22.01 12.8814V11.1214C22 10.0814 21.15 9.2214 20.1 9.2214ZM12 15.2514C10.21 15.2514 8.75 13.7914 8.75 12.0014C8.75 10.2114 10.21 8.7514 12 8.7514C13.79 8.7514 15.25 10.2114 15.25 12.0014C15.25 13.7914 13.79 15.2514 12 15.2514Z" fill="#fff"/>
+                        </svg>
+                </button>
+            </div>
+            <div class="toogle_box">
+                <input class="type-checkbox" id="enabled" type="checkbox" name="name">
+                <label class="estado" for="enabled">
+                  <span class="on">On</span>
+                  <span class="off">Off</span>
+                </label>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="tab_panel set_color show">
+                <div class="palette">
+                    <div class="box">
+                        <div class="color-box" data-hax="['#4a2068', '#623d7c','#dbbefe','#8b91f5','#ee9db3','#ed0074']"></div>
+                        <span>Lavender</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#750a9c','#9010bf','#62feca','#daffad','#b8eaff','#80f0ff']"></div>
+                        <span>Violet</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#7439b0','#9966CC','#38145d','#3d205b','#4f0896','#8000ff']"></div>
+                        <span>Amethyst</span>   
+                    </div>
+
+                    <div class="box">
+                        <div class="color-box" data-hax="['#853d61','#A64D79','#ffdbdb','#ffdbed','#eddbff','#feb4b4']"></div>
+                        <span>Wildberry</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#350e33','#51164e','#ff00bb','#ff00f7','#ff0000','#00ccff']"></div>
+                        <span>Orchid</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#dd6edd','#DDA0DD','#6e0070','#18007a','#001a66','#850000']"></div>
+                        <span>Lilac</span>   
+                    </div>
+
+
+                    <div class="box">
+                        <div class="color-box" data-hax="['#cc80ff','#E0B0FF','#253274','#4c0080','#000000','#9900ff']"></div>
+                        <span>Mauve</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#9d349d','#BF40BF','#dcfef8','#ccffe9','#c7ffdc','#d7ffcc']"></div>
+                        <span>Bright</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#4b1f24','#722F37','#fe717f','#ffadad','#ff00bb','#ff85e9']"></div>
+                        <span>Wine</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#d5aed5','#E6CFE6','#8f0000','#8e3939','#5c3838','#4e0e0e']"></div>
+                        <span>Pale</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#be04da','#DF00FF','#fbff00','#66ffcc','#c8fea4','#66f5ff']"></div>
+                        <span>Psyche</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#45212f','#673147','#f9d000','#7cfeb4','#ffa200','#eb0071']"></div>
+                        <span>Plum</span>   
+                    </div>
+
+
+                    <div class="box">
+                        <div class="color-box" data-hax="['#531f4d','#682860','#f9d000','#13a4f0','#5dde49','#ed0074']"></div>
+                        <span>Palat</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#270d28','#311432','#00b3ff','#13a4f0','#00d5ff','#00ccff']"></div>
+                        <span>Eggplant</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#204ccf','#4169E1','#ffffff','#ffffff','#ffffff','#ffffff']"></div>
+                        <span>Royal</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#101047','#191970','#47ffea','#70ffa7','#a2ff80','#00ff04']"></div>
+                        <span>Midnight</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#3e32b8','#5A4FCF','#ffffff','#ff00f7','#ffffff','#ff00d0']"></div>
+                        <span>Iris</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#3c2281','#6F2DA8','#afff4d','#a3ffae','#f2fe9a','#d0fe7c']"></div> 
+                        <span>Grape</span>   
+                    </div>
+
+                    <div class="box">
+                        <div class="color-box" data-hax="['#1f1c3b','#27234b','#f9d000','#13a4f0','#5dde49','#ed0074']"></div>
+                        <span>Purpl</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#291164','#3a1890','#f9d000','#13a4f0','#5dde49','#ed0074']"></div>
+                        <span>Indigo</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#3f335b','#645394','#ffffff','#ffffff','#ffffff','#ffffff']"></div>
+                        <span>U-Violet</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#290021','#5e004c','#f9d000','#94fe2a','#73ff70','#c6fe5d']"></div>
+                        <span>Mulberry</span>   
+                    </div>
+                    <div class="box">
+                        <div class="color-box" data-hax="['#231333','#32174D','#f9d000','#13a4f0','#5dde49','#ed0074']"></div>
+                        <span>Russian</span>   
+                    </div>
+                    <div class="box">
+                        <input type="color" id="color" name="color">
+                        <label for="color">
+                            <div id="custom_theme" class="custom">
+                                <svg height="24" width="24">
+                                  <path fill="rgb(222, 234, 235)" d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37-1.34-1.34a.996.996 0 0 0-1.41 0L9 12.25 11.75 15l8.96-8.96a.996.996 0 0 0 0-1.41z"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <span>Custom</span>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab_panel set_font">
+                <div class="font_color_tab">
+                    <div class="font-box">
+                        <div class="box">
+                            <input type="color" id="color1" class="font_color" name="color">
+                            <label for="color1">
+                                <div id="custom_theme2" class="custom">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/>
+                                        <path d="M18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364L12 12L18.364 5.63604Z" fill="#fff"/>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <span>Link Color</span>                      
+                            
+                    </div>
+
+                    <div class="font-box">
+                        <div class="box">
+                            <input type="color" id="color2" class="font_color" name="color">
+                            <label for="color2">
+                                <div id="custom_theme3" class="custom">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/>
+                                        <path d="M18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364L12 12L18.364 5.63604Z" fill="#fff"/>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <span>Text Color</span> 
+                    </div>
+
+                    <div class="font-box">
+                        <div class="box">
+                            <input type="color" id="color3" class="font_color" name="color">
+                            <label for="color3">
+                                <div id="custom_theme4" class="custom">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/>
+                                        <path d="M18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364L12 12L18.364 5.63604Z" fill="#fff"/>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>    
+                        <span>Tag Color</span> 
+                    </div>
+
+                    <div class="font-box">
+                        <div class="box">                           
+                            <input type="color" id="color4" class="font_color" name="color">
+                            <label for="color4">
+                                <div id="custom_theme5" class="custom">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/>
+                                        <path d="M18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364L12 12L18.364 5.63604Z" fill="#fff"/>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>        
+                        <span>Chip Color</span> 
+                    </div>
+                </div>
+
+                <div class="font_family">
+                    <div class="icon">
+                        <svg fill="#fff" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17,12 L17,17 L17.5,17 C17.7761424,17 18,17.2238576 18,17.5 C18,17.7761424 17.7761424,18 17.5,18 L15.5,18 C15.2238576,18 15,17.7761424 15,17.5 C15,17.2238576 15.2238576,17 15.5,17 L16,17 L16,12 L14,12 L14,12.5 C14,12.7761424 13.7761424,13 13.5,13 C13.2238576,13 13,12.7761424 13,12.5 L13,11.5 C13,11.2238576 13.2238576,11 13.5,11 L19.5,11 C19.7761424,11 20,11.2238576 20,11.5 L20,12.5 C20,12.7761424 19.7761424,13 19.5,13 C19.2238576,13 19,12.7761424 19,12.5 L19,12 L17,12 Z M10,6 L10,17 L11.5,17 C11.7761424,17 12,17.2238576 12,17.5 C12,17.7761424 11.7761424,18 11.5,18 L7.5,18 C7.22385763,18 7,17.7761424 7,17.5 C7,17.2238576 7.22385763,17 7.5,17 L9,17 L9,6 L5,6 L5,7.5 C5,7.77614237 4.77614237,8 4.5,8 C4.22385763,8 4,7.77614237 4,7.5 L4,5.5 C4,5.22385763 4.22385763,5 4.5,5 L14.5,5 C14.7761424,5 15,5.22385763 15,5.5 L15,7.5 C15,7.77614237 14.7761424,8 14.5,8 C14.2238576,8 14,7.77614237 14,7.5 L14,6 L10,6 Z"/>
+                        </svg>
+                    </div>
+                    <div class="font_size" id="up">A+</div>
+                    <div class="font_size" id="down">A-</div>
+                    <div class="font_size" id="default">Default Size</div>
+                </div>
+
+                <div class="font_family">
+                    <div class="icon">
+                        <svg width="24px" height="24px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M2.5 4.5C2.5 3.09886 3.59886 2 5 2H12.499C12.7752 2 13 2.22386 13 2.5C13 2.77614 12.7761 3 12.5 3H8.69244L8.40509 3.85458C8.18869 4.49752 7.89401 5.37197 7.58091 6.29794C7.50259 6.52956 7.42308 6.76453 7.34332 7H8.5C8.77614 7 9 7.22386 9 7.5C9 7.77614 8.77614 8 8.5 8H7.00407C6.56724 9.28543 6.16435 10.4613 5.95799 11.0386C5.63627 11.9386 5.20712 12.4857 4.66741 12.7778C4.16335 13.0507 3.64154 13.0503 3.28378 13.05L3.25 13.05C2.94624 13.05 2.7 12.8037 2.7 12.5C2.7 12.1962 2.94624 11.95 3.25 11.95C3.64182 11.95 3.9035 11.9405 4.14374 11.8105C4.36443 11.691 4.65532 11.4148 4.92217 10.6683C5.10695 10.1514 5.45375 9.14134 5.8422 8H4.5C4.22386 8 4 7.77614 4 7.5C4 7.22386 4.22386 7 4.5 7H6.18187C6.30127 6.64785 6.42132 6.29323 6.53887 5.94559C6.85175 5.02025 7.14627 4.14631 7.36256 3.50368L7.53192 3H5C4.15114 3 3.5 3.65114 3.5 4.5C3.5 4.77614 3.27614 5 3 5C2.72386 5 2.5 4.77614 2.5 4.5Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                    </div>
+                    <span>Font Family:</span>
+                    <select name="family" id="family"></select>
+                </div>
+            </div>
+            <div class="tab_panel set_seting">
+                <div class="setting_box">
+                    <span>Banner Advertisement Hide:</span>
+                    <div class="switch">
+                        <input class="type-switch" name="ads" id="ads" type="checkbox" />
+                        <label for="ads"></label>
+                    </div>
+                </div>
+                <div class="setting_box">
+                    <span>Extra Border Radius:</span>
+                    <div class="switch">
+                        <input class="type-switch" name="radius" id="radius" type="checkbox" />
+                        <label for="radius"></label>
+                    </div>
+                </div>
+                <div class="setting_box">
+                    <span>Bordering:</span>
+                    <div class="switch">
+                        <input class="type-switch" name="border" id="border" type="checkbox" />
+                        <label for="border"></label>
+                    </div>
+                </div>
+                <div class="setting_box">
+                    <span>Transparent:</span>
+                    <div class="switch">
+                        <input class="type-switch" name="transparent" id="transparent" type="checkbox" />
+                        <label for="transparent"></label>
+                    </div>
+                </div>
+                <div class="setting_box">
+                    <span>Animation:</span>
+                    <div class="switch">
+                        <input class="type-switch" name="animation" id="animation" type="checkbox" />
+                        <label for="animation"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="footer-text">Purple Of YouTube v.1.2</div>
+            <a href="#" target="_blank" class="footer-fb">
+              <svg width="20px" height="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g><path fill="#333" d="M325.581,111.282h46.654c9.995,0,18.128-8.132,18.128-18.128V18.187c0-9.996-8.132-18.128-18.128-18.128H308.17
+                  C307.556,0.033,306.489,0,304.994,0c-12.088,0-54.123,2.385-87.472,33.064c-36.401,33.493-32.918,73.557-31.386,83.435v48.84
+                  h-46.371c-9.995,0-18.128,8.132-18.128,18.128v80.629c0,9.997,8.132,18.13,18.128,18.13h43.688v211.647
+                  c0,9.995,8.132,18.128,18.128,18.128h91.368c9.995,0,18.128-8.133,18.128-18.128V283.271h51.749
+                  c9.214,0,16.956-6.903,18.009-16.056l9.409-81.672c0.591-5.131-1.04-10.285-4.477-14.14c-3.437-3.853-8.368-6.063-13.53-6.063
+                  h-61.156v-40.997C311.079,115.872,313.39,111.282,325.581,111.282z M300.881,185.739h68.807l-8.886,77.134h-59.924
+                  c-5.632,0-10.199,4.566-10.199,10.199v218.53H203.85V272.026c0-5.633-4.567-10.199-10.199-10.199h-51.617v-76.09h54.301
+                  c5.632,0,10.199-4.566,10.199-10.199V115.67c0-0.585-0.05-1.17-0.15-1.747c-1.075-6.175-4.918-38.365,24.95-65.847
+                  c27.915-25.681,63.439-27.677,73.661-27.677c1.433,0,2.286,0.038,2.442,0.046c0.168,0.008,0.336,0.012,0.504,0.012h62.026v70.428
+                  h-44.385c-21.854,0-34.901,12.508-34.901,33.458v51.196C290.681,181.173,295.249,185.739,300.881,185.739z"></path></g></g><g><g><path fill="#333" d="M224.382,343.713c-5.632,0-10.199,4.566-10.199,10.199v5.1c0,5.633,4.567,10.199,10.199,10.199
+                  c5.632,0,10.199-4.566,10.199-10.199v-5.1C234.581,348.279,230.013,343.713,224.382,343.713z"></path></g></g><g><g><path fill="#333" d="M224.382,381.45c-5.632,0-10.199,4.566-10.199,10.199v77.514c0,5.633,4.567,10.199,10.199,10.199
+                  c5.632,0,10.199-4.566,10.199-10.199v-77.514C234.581,386.016,230.013,381.45,224.382,381.45z"></path></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+            <a href="#" target="_blank" class="footer-yt">
+                <svg width="20px" height="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49 49" style="enable-background:new 0 0 49 49" xml:space="preserve"><g><g><path fill="#333" d="M39.256,6.5H9.744C4.371,6.5,0,10.885,0,16.274v16.451c0,5.39,4.371,9.774,9.744,9.774h29.512
+              c5.373,0,9.744-4.385,9.744-9.774V16.274C49,10.885,44.629,6.5,39.256,6.5z M47,32.726c0,4.287-3.474,7.774-7.744,7.774H9.744
+              C5.474,40.5,2,37.012,2,32.726V16.274C2,11.988,5.474,8.5,9.744,8.5h29.512c4.27,0,7.744,3.488,7.744,7.774V32.726z"></path><path d="M33.36,24.138l-13.855-8.115c-0.308-0.18-0.691-0.183-1.002-0.005S18,16.527,18,16.886v16.229
+              c0,0.358,0.192,0.69,0.502,0.868c0.154,0.088,0.326,0.132,0.498,0.132c0.175,0,0.349-0.046,0.505-0.137l13.855-8.113
+              c0.306-0.179,0.495-0.508,0.495-0.863S33.667,24.317,33.36,24.138z M20,31.37V18.63l10.876,6.371L20,31.37z"></path></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+            <a href="#" target="_blank" class="footer-web">
+
+                <svg width="20px" height="20px" viewBox="-0.5 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-network-2"><title></title><defs></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(1.000000, 1.000000)" fill="#434343"><path d="M7.494,14.958 C3.361,14.958 0,11.622 0,7.52 C0,3.418 3.361,0.082 7.494,0.082 C11.627,0.082 14.989,3.418 14.989,7.52 C14.989,11.622 11.627,14.958 7.494,14.958 L7.494,14.958 Z M7.51,0.938 C3.887,0.938 0.938,3.886 0.938,7.51 C0.938,11.135 3.887,14.083 7.51,14.083 C11.135,14.083 14.083,11.135 14.083,7.51 C14.083,3.886 11.135,0.938 7.51,0.938 L7.51,0.938 Z" class="si-glyph-fill"></path><rect x="7" y="1" width="0.922" height="14.084" class="si-glyph-fill"></rect><rect x="0" y="7" width="13.96" height="0.922" class="si-glyph-fill"></rect><rect x="1" y="4" width="12.406" height="0.906" class="si-glyph-fill"></rect><rect x="1" y="10" width="12.406" height="0.922" class="si-glyph-fill"></rect><path d="M7.317,14.854 C4.72,13.581 3.043,10.662 3.043,7.417 C3.043,4.247 4.666,1.355 7.181,0.05 L7.642,0.937 C5.455,2.074 4.043,4.617 4.043,7.417 C4.043,10.282 5.502,12.849 7.757,13.955 L7.317,14.854 L7.317,14.854 Z" class="si-glyph-fill"></path><path d="M7.74,14.789 L7.271,13.906 C9.41,12.772 10.792,10.225 10.792,7.417 C10.792,4.642 9.433,2.107 7.332,0.96 L7.811,0.083 C10.229,1.401 11.792,4.28 11.792,7.417 C11.793,10.592 10.201,13.485 7.74,14.789 L7.74,14.789 Z" class="si-glyph-fill"></path></g></g></svg>
+            </a>
+        </div>
+
+    </body>
+    <script src='popup.js'></script>
+</html>
+            
