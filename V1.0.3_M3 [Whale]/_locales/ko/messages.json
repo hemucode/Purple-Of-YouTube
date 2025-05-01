@@ -1,0 +1,10 @@
+{ "app_name": {
+        "message": "Purple Of YouTube™"
+    },
+    "app_description": {
+        "message": "세련되고 독특한 경험을 위해 사용자 정의 색상 및 테마로 YouTube 배경을 개인화하십시오."
+    },
+    "app_short_name": {
+        "message": "보라"
+    }
+}
