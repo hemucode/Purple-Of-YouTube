@@ -5,7 +5,6 @@ app.error = function() {
     return API.runtime.lastError;
 };
 
-
 app.action = {
     "set": {
         "icon": function(callback) {

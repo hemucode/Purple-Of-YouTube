@@ -28,8 +28,6 @@ var core = {
   }
 };
 
-
-
 app.on.startup(core.start);
 app.on.installed(core.install);
 

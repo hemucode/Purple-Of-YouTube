@@ -203,7 +203,7 @@ const CSS_THEME = (colors)=>{
       --yt-active-playlist-panel-background-color: ${colors[0]} !important;
     }
 
-    html, html[dark], [dark] {
+    html, html[dark], [dark], [light], html[light] {
       --yt-spec-base-background: ${colors[1]} !important;
       --yt-spec-raised-background:  ${colors[1]} !important;
       --yt-spec-menu-background:  ${colors[1]} !important;
@@ -226,7 +226,9 @@ const CSS_THEME = (colors)=>{
       --yt-spec-button-chip-background-hover: ${colors[0]} !important;
       --yt-spec-touch-response: ${colors[1]} !important;
       --yt-spec-touch-response-inverse: ${colors[1]} !important;
-      --yt-spec-brand-icon-active: ${colors[1]} !important;
+      --yt-spec-brand-icon-active: ${colors[1]} !important;      
+      --yt-frosted-glass-mobile: ${colors[1]} !important;
+      --yt-frosted-glass-desktop: ${colors[1]} !important;
 
 
       --ytd-searchbox-legacy-border-color: ${colors[1]} !important;

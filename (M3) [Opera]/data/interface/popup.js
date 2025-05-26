@@ -181,7 +181,7 @@ const CUSTOME_SET = async(ele, hex) =>{
 }
 
 const DETAILS = {
-  "REVIEW":`https://addons.opera.com/en/extensions/details/purple-for-youtubetm/`,
+  "REVIEW":`https://addons.opera.com/en/extensions/details/purple-of-youtubetm/`,
   "SUPPORT": "https://www.codehemu.com/p/purple-of-youtube.html",
   "YT": "https://www.youtube.com/@CodeHemu",
   "FB": "https://www.facebook.com/CodeHemu",
@@ -362,11 +362,7 @@ class POPUP{
 		CUSTOME_SET("#custom_theme" + number, color);
 		await API.storage.local.set({ colors });
 	}
-
-
 }
-
-
 
 READY(() => {
 	try{

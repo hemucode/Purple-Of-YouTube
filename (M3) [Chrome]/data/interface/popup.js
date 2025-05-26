@@ -158,8 +158,6 @@ const HEX2HSL = (hex) =>{
     console.log(err.message);
     return [null,null,null];
   }
-
-
 }
 
 const CUSTOME_SET = async(ele, hex) =>{

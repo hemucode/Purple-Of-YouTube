@@ -3,12 +3,9 @@
     "name": "__MSG_app_name__",
     "short_name": "__MSG_app_short_name__",
     "description": "__MSG_app_description__",
-    "version": "1.0.3",
-    "default_locale": "ko",
-    "permissions": [
-        "storage",
-        "tabs"
-    ],
+    "version": "1.0.4",
+    "default_locale": "en",
+    "permissions": ["storage"],
     "host_permissions": [
        "*://*.youtube.com/*" 
     ],
